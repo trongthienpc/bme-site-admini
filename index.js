@@ -29,7 +29,6 @@ app.use(cors());
 app.use("/api/rooms", roomRoute);
 
 app.use("/api/blogs", blogRouter);
-const port = process.env.port || 8000;
 
 // app.listen(port, () =>
 //   console.log(`server started on port ${process.env.port || 8000}`)
