@@ -1,0 +1,8 @@
+GET http://localhost:8000/api/rooms/
+
+#######
+
+GET http://localhost:8000/api/blogs/
+
+######
+GET http://localhost:8000/api/blogs/6210b7ad21ee576a67d45eab
