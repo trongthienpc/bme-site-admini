@@ -34,4 +34,6 @@ app.use("/api/blogs", blogRouter);
 //   console.log(`server started on port ${process.env.port || 8000}`)
 // );
 
-app.listen(process.env.port || 8000);
+app.listen(process.env.PORT || 8000, "0.0.0.0", () => {
+  console.log("Server is running.");
+});
