@@ -6,10 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node index",
-    "build": "npm run build",
-    "start": "npm run build && node server.js",
-    "deploy": "gh-pages -d build"
+    "start": "node index",
+    "build": "npm run build"
   },
   "author": "",
   "license": "ISC",
