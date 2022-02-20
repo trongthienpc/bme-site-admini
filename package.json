@@ -1,12 +1,15 @@
 {
-  "homepage": "https://trongthienpx.github.io/bme.site.admin/",
+  "homepage": "https://trongthienpc.github.io/bme-site-admini/",
   "name": "bme-client-backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon index"
+    "start": "node index",
+    "server": "nodemon index",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
