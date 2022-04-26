@@ -4,6 +4,7 @@ const cors = require("cors");
 require("dotenv").config();
 const roomRoute = require("./routes/room");
 const blogRouter = require("./routes/blogRouter");
+const commentRouter = require("./routes/commentRouter");
 
 const connectDb = async () => {
   try {
@@ -29,6 +30,8 @@ app.use(cors());
 app.use("/api/rooms", roomRoute);
 
 app.use("/api/blogs", blogRouter);
+
+app.use("/api/comments", commentRouter);
 
 // app.listen(port, () =>
 //   console.log(`server started on port ${process.env.port || 8000}`)
