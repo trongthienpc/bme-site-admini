@@ -16,7 +16,7 @@ router.get("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
   const id = req.params.id;
   if (id.length === 24) {
-    const entity = commentModel.findById(id);
+    const entity = await commentModel.findById(id);
     if (!entity)
       res.status(404).json({
         success: false,
